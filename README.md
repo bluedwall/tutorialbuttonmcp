@@ -1,6 +1,6 @@
-##Name : How to create custom button
-##Author : @⛧' BlueWall#9376 (me)
-#Description : how to create a button with custom textures / color / rectangles
+## Name : How to create custom button
+## Author : @⛧' BlueWall#9376 (me)
+# Description : how to create a button with custom textures / color / rectangles
 
 Lets start !
 First create a class that extends GuiButton ( `net.minecraft.client.gui` )
