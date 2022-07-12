@@ -1,9 +1,9 @@
 ## Name : How to create custom button
-## Author : @⛧' BlueWall#9376 (me)
+## Author : ⛧' BlueWall#9376 (me)
 # Description : how to create a button with custom textures / color / rectangles
 
 Lets start !
-First create a class that extends GuiButton ( `net.minecraft.client.gui` )
+## First create a class that extends GuiButton ( `net.minecraft.client.gui` )
 ```java
 public class GuiCustomButton extends GuiButton
 {
@@ -18,7 +18,7 @@ public class GuiCustomButton extends GuiButton
     }
 }
 ```
-Next, create a override function named drawButton
+## Next, create a override function named drawButton
 ```java
     @Override
     public void drawButton(Minecraft mc, int mouseX, int mouseY)
@@ -26,7 +26,7 @@ Next, create a override function named drawButton
         
     }
 ```
-Now put in the function the code below (default minecraft drawButton func)
+## Now put in the function the code below (default minecraft drawButton func)
 ```java
         if (this.visible)
         {
@@ -56,11 +56,11 @@ Now put in the function the code below (default minecraft drawButton func)
             this.drawCenteredString(fontrenderer, this.displayString, this.xPosition + this.width / 2, this.yPosition + (this.height - 8) / 2, j);
         }
 ```
-Those are the lines you wana modify :
+## Those are the lines you wana modify :
 ```java
 
             this.drawTexturedModalRect(this.xPosition, this.yPosition, 0, 46 + i * 20, this.width / 2, this.height);
             this.drawTexturedModalRect(this.xPosition + this.width / 2, this.yPosition, 200 - this.width / 2, 46 + i*20,this.width/2,this.height);
 ```
-To call the button :
-this.buttonList.add(new GuiCustomButton(args));
+## To call the button :
+`this.buttonList.add(new GuiCustomButton(args));`
